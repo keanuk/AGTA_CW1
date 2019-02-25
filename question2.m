@@ -7,11 +7,12 @@ p2f = [-1, -1, -1, -1, -1];
 p2b = [1, 1, 1, 1, 1];
 
 lb = zeros(1,5);
+ub = [];
 aeq = ones(1,5);
 beq = 1;
 
-p = linprog(p1f, p1a, p1b, aeq, beq, lb, []);
-q = linprog(p2f, p2a, p2b, aeq, beq, lb, []);
+p = linprog(p1f, p1a, p1b, aeq, beq, lb, ub);
+q = linprog(p2f, p2a, p2b, aeq, beq, lb, ub);
 
 disp('Player 1: ');
 disp(p);

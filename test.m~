@@ -1,0 +1,27 @@
+% a = [6, 1; 3, 4];
+% a = -a;
+% f = [1, 1];
+% b = [1, 1];
+% 
+% lb = zeros(1,2);
+% ub = [];
+% aeq = ones(1,2);
+% beq = 1;
+% 
+% p = linprog(f, a, b, aeq, beq, lb, ub);
+% 
+% disp(p);
+
+a = [6, 1; 3, 4];
+a = -a;
+f = [1, 1];
+b = [1, 1];
+
+lb = zeros(1,2);
+ub = [];
+aeq = ones(1,2);
+beq = 1;
+
+p = linprog(f, a, b, aeq, beq, lb, ub);
+
+disp(p);
